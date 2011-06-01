@@ -1,0 +1,99 @@
+// layout ------------------------
+
+@mixin centeredPanel($width) {
+    // for setting up a centered page
+    margin: 0 auto;
+    position: relative;
+    width: $width;
+}
+
+@mixin offLeft {
+    // for offsetting text - hidden for all but screen readers
+	height:1em;
+	left: -1000em;
+	overflow: hidden;
+	position: absolute;
+	width: 600em;
+}
+
+@mixin indentTextOut {
+    // for hiding text in a block
+    overflow: hidden;
+    text-indent: -1000em;
+}
+
+// links ---------------------------
+
+@mixin linkSet($linkColour,$hoverColour,$selectedColour:na,$selectedDecoration:underline) {
+    // creates a set of links with hover states etc
+    a, a:link {
+        color: $linkColour;
+    }
+    a:hover {
+        color: $hoverColour;
+    }
+    @if $selectedColour != "na" {
+        a.selected, a.selected:link, a.selected:hover {
+            color: $selectedColour;
+            text-decoration: $selectedDecoration;
+        }
+    }
+}
+
+// lists ---------------------------
+
+@mixin horizontalList {
+    // creating a horizontal list
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline;
+    }
+}
+
+@mixin noBullets {
+    // vertical list but with no bullets
+    list-style-type: none;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+// CSS3 effects ---------------------
+
+@mixin boxShadow($x,$y,$blur,$colour) {
+    -webkit-box-shadow: $x $y $blur $colour;
+    -moz-box-shadow: $x $y $blur $colour;
+    box-shadow: $x $y $blur $colour;
+}
+
+
+@mixin textShadow($x,$y,$blur,$colour) {
+    text-shadow: $x+px $y+px $blur $colour;
+    filter: dropshadow(color=$colour, offx=$x, offy=$y);
+}
+
+@mixin transparency($val, $val-ie) {
+    filter:alpha(opacity=$val-ie);
+    -moz-opacity:$val;
+    -khtml-opacity: $val;
+    opacity: $val;
+}
+
+@mixin roundedCorners($all,$topleft:0,$topright:0,$bottomright:0,$bottomleft:0) {
+    @if $all != false {
+        -moz-border-radius: $all;
+        border-radius: $all;
+    } @else {
+        -moz-border-radius-topleft: $topleft;
+        -moz-border-radius-topright: $topright;
+        -moz-border-radius-bottomright: $bottomright;
+        -moz-border-radius-bottomleft: $bottomleft;
+        border-top-left-radius: $topleft;
+        border-top-right-radius: $topright;
+        border-bottom-right-radius: $bottomright;
+        border-bottom-left-radius: $bottomleft;
+    }
+}

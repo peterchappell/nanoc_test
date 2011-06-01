@@ -1,0 +1,72 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+# Compass integration
+require 'compass'
+Compass.add_project_configuration('config.rb')
+
+### --------------------------
+### Stylesheets
+### --------------------------
+
+compile '/scss/*/' do
+#  filter :sass, Compass.sass_engine_options
+end
+
+compile '/scss/_*/' do
+  # don’t compile partials
+end
+
+route '/scss/_*/' do
+  # don't output partials, so return nil
+  nil
+end
+
+route '/scss/*/' do
+#  item.identifier.chop + '.css'
+nil
+end
+
+### --------------------------
+### Javascript
+### --------------------------
+
+compile '/js/*' do
+    # don't compile js just yet
+end
+
+route '/js/*' do
+    item.identifier.chop + '.js'
+end
+
+### --------------------------
+### Content
+### --------------------------
+
+compile '*' do
+  filter :kramdown
+  layout 'default'
+  filter :relativize_paths, :type => :html
+end
+
+route '*' do
+  item.identifier + 'index.html'
+end
+
+### --------------------------
+### Layout
+### --------------------------
+
+# For production can set ':ugly' to 'true'.
+# layout '*', :haml, :format => :html5, :ugly => false, :escape_html => false
+
+layout '*', :erb

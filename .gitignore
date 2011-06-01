@@ -1,0 +1,9 @@
+tmp/
+*.sqlite3
+db/mongo/
+log/
+.idea/workspace.xml
+.redcar
+.DS_Store
+.idea/
+/output

@@ -1,0 +1,46 @@
+/* ------------------------------------------------------ */
+/* TYPOGRAPHY */
+/* ------------------------------------------------------ */
+
+/* TODO (change the defaults)
+1. Set up the base font size in html5 boilerplate start - font normalisation area (set to 13 px by default)
+2. Set up the base font family in html5 boilerplate start - towards the end of the file
+*/
+
+/*
+Use these to help set up baseline rhythm:
+http://drewish.com/tools/vertical-rhythm
+http://topfunky.com/baseline-rhythm-calculator/ (gone?)
+http://pxtoem.com/ is also a useful tool
+*/
+
+h1 {
+    font-size: 1.8462em; /* 24px */
+    line-height: 1.3333em; /* 32px */
+    margin: 0.6667em 0 0;
+}
+h2 {
+    font-size: 1.6923em; /* 22px */
+    line-height: 1.4545em; /* 32px */
+    margin: 0.7273em 0 0;
+}
+h3 {
+	font-size: 1.5385em; /* 20px */
+	line-height: 1.6em; /* 32px */
+	margin: 0.8em 0 0;
+}
+h4 {
+	font-size: 1.3846em; /* 18px */
+	line-height: 1.7778em; /* 32px */
+	margin: 0.8889em 0 0;
+}
+h5 {
+	font-size: 1.2308em; /* 16px */
+	line-height: 1em; /* 16px */
+	margin: 1em 0 0;
+}
+h6 {
+	font-size: 1.0769em; /* 14px */
+	line-height: 1.1429em; /* 16px */
+	margin: 1.1429em 0 0;
+}
