@@ -12,10 +12,10 @@ end
 use Rack::Static, :urls => ["/"], :root => Dir.pwd + '/output'
 
 # Empty app, should never be reached:
-class nanoctest
+class Nanoctest
   def call(env)
     [200, {"Content-Type" => "text/html"}, ["Ouch, broken link!"] ]
   end
 end
-run nanoctest.new
+run Nanoctest.new
 
