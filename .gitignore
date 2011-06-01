@@ -1,9 +1,4 @@
-tmp/
-*.sqlite3
-db/mongo/
-log/
-.idea/workspace.xml
-.redcar
+/.idea
 .DS_Store
-.idea/
 /output
+/.sass-cache
