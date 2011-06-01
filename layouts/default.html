@@ -47,7 +47,19 @@
         </nav>
     </header>
     <div id="main" role="main">
+
+        <% unless @item.reps[0].path == "/" %>
+            <span class="breadcrumbs">
+                <% breadcrumbs_trail.each do |b| %>
+                    <% if b != @item then %>
+                        <%= link_to(  b[:title] , b.reps[0].path ) if b  %>
+                        <%= ' - ' %>
+                    <% end %>
+                <%end%>
+            </span>
+        <% end %>
         <%= yield %>
+
     </div>
     <footer>
 

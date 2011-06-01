@@ -53,6 +53,7 @@ end
 ### --------------------------
 
 compile '*' do
+  filter :erb
   filter :kramdown
   layout 'default'
   filter :relativize_paths, :type => :html

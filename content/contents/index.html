@@ -1,20 +1,9 @@
 Table of contents
 ====================
 
-A Second Level Header
----------------------
+This is the table of contents page...
 
-Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.
-
-The quick brown fox jumped over the lazy
-dog's back.
-
-### Header 3
-
-> This is a blockquote.
->
-> This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote
+<% contents_home = @items.find { |i| i.reps[0].path == '/contents/' } %>
+<ul>
+<%= toc (contents_home) %>
+</ul>
