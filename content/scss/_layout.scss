@@ -7,7 +7,7 @@ FOR CUSTOM STUFF
 }
 
 #siteBanner {
-    background-color: #f5f5f5;
+    background: #f5f5f5 url(../img/bg_pocket.png) no-repeat 50% 50%;
     border-bottom:  1px solid #ccc;
     padding:  1em 1em 3.5em;
     text-align: center;
@@ -33,6 +33,16 @@ FOR CUSTOM STUFF
     padding:  2em 0.5em 4em;
     h1, h2 {
         border-bottom:  1px solid #ccc;
+    }
+    ul {
+        margin-top: 1em;
+        li {
+            margin-bottom: 0.25em;
+        }
+        ul {
+            margin-bottom: 0.5em;
+            margin-top: 0;
+        }
     }
 }
 

@@ -49,6 +49,18 @@ route '/js/*' do
 end
 
 ### --------------------------
+### Images
+### --------------------------
+
+compile '/img/*' do
+    # don't compile js just yet
+end
+
+route '/img/*' do
+    item.identifier.chop + '.png'
+end
+
+### --------------------------
 ### Content
 ### --------------------------
 

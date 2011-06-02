@@ -8,7 +8,7 @@ module TocHelper
         sitemap_buffer << link_to_unless_current(page[:title], page.reps[0])
 
         # Add children to sitemap, recursively
-        visible_children = page.children.sort_by { |page| page[:title].downcase }
+        visible_children = page.children.sort_by { |page| page[:order] }
         if visible_children.size > 0
 
           # Open list
