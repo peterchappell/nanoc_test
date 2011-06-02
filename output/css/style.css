@@ -166,6 +166,8 @@ FOR CUSTOM STUFF
 
 /* table of contents */
 .toc { list-style-type: none; margin: 1em 0 0; }
+.toc li { font-weight: bold; }
+.toc li a { font-weight: normal; }
 
 /** Non-semantic helper classes: please define your styles before this section. */
 /* For image replacement */

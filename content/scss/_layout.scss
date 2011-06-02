@@ -59,6 +59,12 @@ FOR CUSTOM STUFF
 .toc {
     list-style-type: none;
     margin:  1em 0 0;
+    li {
+        font-weight: bold;
+        a {
+            font-weight: normal;
+        }
+    }
 }
 
 
