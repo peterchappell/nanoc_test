@@ -126,6 +126,7 @@ p { margin: 1em 0 0; }
 /* ------------------------------------------------------ */
 /* standard data table */
 /* ------------------------------------------------------ */
+table { margin: 1em 0 0; }
 table th, table td { padding: 0.75em 1.5em; }
 table th { background-color: #dddddd; border: 1px solid #cccccc; border-right: none; font-weight: bold; }
 table tr th:last-child { border-right: 1px solid #cccccc; }
@@ -160,6 +161,9 @@ FOR CUSTOM STUFF
 
 #siteFooter .container { margin: 0 auto; position: relative; width: 330px; border-top: 2px solid #ccc; padding: 1em 0 2em; text-align: center; }
 
+/* table of contents */
+.toc { list-style-type: none; margin: 1em 0 0; }
+
 /** Non-semantic helper classes: please define your styles before this section. */
 /* For image replacement */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
@@ -184,11 +188,12 @@ FOR CUSTOM STUFF
 .clearfix { zoom: 1; }
 
 /** Placeholder media queries for responsive design. Modify as design requires. These follow after, and will override, the primary ('mobile first') styles The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill */
-@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */
+@media only screen and (min-width: 481px) { /* Style adjustments for viewports 480px and over go here */
   #mainMenu ul { list-style-type: none; margin: 0; padding: 0; }
   #mainMenu ul li { display: inline; }
   #mainMenu ul a { display: inline-block; }
-  .container { margin: 0 auto; position: relative; width: 660px; } }
+  .container { margin: 0 auto; position: relative; width: 660px; }
+  table { zoom: 1; } }
 /*/mediaquery*/
 @media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
 /*/mediaquery*/
