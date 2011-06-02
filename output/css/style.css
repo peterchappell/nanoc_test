@@ -121,6 +121,8 @@ h5 { font-size: 1.2308em; /* 16px */ line-height: 1em; /* 16px */ margin: 1em 0 
 
 h6 { font-size: 1.0769em; /* 14px */ line-height: 1.1429em; /* 16px */ margin: 1.1429em 0 0; }
 
+p { margin: 1em 0 0; }
+
 /* ------------------------------------------------------ */
 /* standard data table */
 /* ------------------------------------------------------ */
@@ -143,7 +145,20 @@ a.button:hover, button.button:hover { background: #fff none; border: 1px solid #
 /*
 FOR CUSTOM STUFF
 */
-div { border: 1px solid #c00; }
+.container { margin: 0 auto; }
+
+#siteBanner { background-color: #f5f5f5; border-bottom: 1px solid #ccc; padding: 1em 1em 3.5em; text-align: center; }
+#siteBanner h1 { font-size: 4em; }
+
+#mainMenu { padding-top: 1.5em; }
+#mainMenu ul { font-size: 1.1em; list-style-type: none; padding: 0; }
+#mainMenu ul li { list-style-type: none; }
+#mainMenu ul a { display: block; padding: 0.25em 1em; }
+
+#main { margin: 0 auto; padding: 2em 0.5em 4em; }
+#main h1, #main h2 { border-bottom: 1px solid #ccc; }
+
+#siteFooter .container { margin: 0 auto; position: relative; width: 330px; border-top: 2px solid #ccc; padding: 1em 0 2em; text-align: center; }
 
 /** Non-semantic helper classes: please define your styles before this section. */
 /* For image replacement */
@@ -169,7 +184,11 @@ div { border: 1px solid #c00; }
 .clearfix { zoom: 1; }
 
 /** Placeholder media queries for responsive design. Modify as design requires. These follow after, and will override, the primary ('mobile first') styles The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill */
-@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
+@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */
+  #mainMenu ul { list-style-type: none; margin: 0; padding: 0; }
+  #mainMenu ul li { display: inline; }
+  #mainMenu ul a { display: inline-block; }
+  .container { margin: 0 auto; position: relative; width: 660px; } }
 /*/mediaquery*/
 @media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
 /*/mediaquery*/

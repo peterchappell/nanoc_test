@@ -1,0 +1,13 @@
+#mainMenu {
+    ul {
+        @include horizontalList;
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+.container {
+    @include centeredPanel(660px);
+}
+
