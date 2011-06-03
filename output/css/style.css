@@ -149,7 +149,7 @@ FOR CUSTOM STUFF
 .container { margin: 0 auto; }
 
 #siteBanner { background: #f5f5f5 url(../img/bg_pocket.png) no-repeat 50% 50%; border-bottom: 1px solid #ccc; padding: 1em 1em 3.5em; text-align: center; }
-#siteBanner h1 { font-size: 4em; }
+#siteBanner h1 { font-size: 4em; line-height: 1em; }
 
 #mainMenu { padding-top: 1.5em; }
 #mainMenu ul { font-size: 1.1em; list-style-type: none; padding: 0; }
