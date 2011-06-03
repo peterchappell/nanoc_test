@@ -48,7 +48,6 @@ FOR CUSTOM STUFF
 
 #siteFooter {
     .container {
-        @include centeredPanel(330px);
         border-top:  2px solid #ccc;
         padding:  1em 0 2em;
         text-align: center;

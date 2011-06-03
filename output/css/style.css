@@ -162,7 +162,7 @@ FOR CUSTOM STUFF
 #main ul li { margin-bottom: 0.25em; }
 #main ul ul { margin-bottom: 0.5em; margin-top: 0; }
 
-#siteFooter .container { margin: 0 auto; position: relative; width: 330px; border-top: 2px solid #ccc; padding: 1em 0 2em; text-align: center; }
+#siteFooter .container { border-top: 2px solid #ccc; padding: 1em 0 2em; text-align: center; }
 
 /* table of contents */
 .toc { list-style-type: none; margin: 1em 0 0; }
