@@ -59,7 +59,19 @@ compile '/img/*' do
 end
 
 route '/img/*' do
-    item.identifier.chop + '.png'
+    item.identifier.chop + '.' + item[:extension]
+end
+
+### --------------------------
+### Media
+### --------------------------
+
+compile '/_media/*' do
+    # don't compile js just yet
+end
+
+route '/_media/*' do
+    item.identifier.chop + '.' + item[:extension]
 end
 
 ### --------------------------
