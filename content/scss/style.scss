@@ -1,34 +1,21 @@
 // variables ------------------------
-
-$mainBgColour: #fff;
-$mainTextColour: #444;
-$mainSelectionBgColour: #FF5E99;
-$mainSelectionTextColour: #fff;
-$keylineColour: #ccc;
-$mainLinkColour: #607890;
-$mainLinkHoverColour: #036;
-
-$errorBackgroundColour: #f0dddd;
-
-$tableBorderColour: #ccc;
-$tableThBgColour: #ddd;
-$tableOddBgColour: #eee;
-$tableRowHoverBgColour: #f5f5f5;
+@import "variables";
 
 // html5 boilerplate start ----------
-
 @import "html5boilerplate/start";
 
 // custom stuff ---------------------
-
 @import "mixins"; // my set of mixins that I lean on regularly
 @import "typography"; // a setup for baseline rhythm etc (in progress)
 @import "common"; // my own set of regularly used common styles
 @import "layout"; // for the custom stuff for a site
 
 // html5 boilerplate end ------------
-
 @import "html5boilerplate/helpers";
-@import "html5boilerplate/responsive"; // replace with your own (not in html5boilerplate folder)
+//@import "html5boilerplate/responsive"; // replace with your own (not in html5boilerplate folder)
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over */
+  @import "desktop";
+}/*/mediaquery*/
 @import "html5boilerplate/print"; // use as base for print
 @import "print";
