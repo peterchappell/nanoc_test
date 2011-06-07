@@ -7,7 +7,7 @@ FOR CUSTOM STUFF
 }
 
 #siteBanner {
-    background: #f5f5f5 url(../img/bg_pocket.png) no-repeat 50% 50%;
+    background: #f5f5f5 url(../img/style/bg_pocket.png) no-repeat 50% 50%;
     border-bottom:  1px solid #ccc;
     padding:  1em 1em 3.5em;
     text-align: center;
@@ -44,6 +44,9 @@ FOR CUSTOM STUFF
             margin-bottom: 0.5em;
             margin-top: 0;
         }
+    }
+    img {
+        max-width: 100%;
     }
 }
 

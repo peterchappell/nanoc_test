@@ -22,7 +22,7 @@ SITE_ROOT = '';
 
 compile '/scss/*_*/' do
   # don’t compile partials
-  nil
+  # nil
 end
 
 compile '/scss/*/' do

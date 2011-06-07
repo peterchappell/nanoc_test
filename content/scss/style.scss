@@ -14,8 +14,10 @@
 @import "html5boilerplate/helpers";
 //@import "html5boilerplate/responsive"; // replace with your own (not in html5boilerplate folder)
 @media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over */
   @import "desktop";
-}/*/mediaquery*/
+}
+@media only screen and (min-width: 768px) {
+  @import "_desktop-big";
+}
 @import "html5boilerplate/print"; // use as base for print
 @import "print";
