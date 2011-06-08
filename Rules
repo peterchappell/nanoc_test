@@ -71,7 +71,9 @@ compile '/_media/*' do
 end
 
 route '/_media/*' do
-    item.identifier.chop + '.' + item[:extension]
+    # item.identifier.chop + '.' + item[:extension]
+    # don't put media in output any more - it gets uploaded to S3
+    nil
 end
 
 ### --------------------------
