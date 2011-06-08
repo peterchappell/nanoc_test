@@ -82,6 +82,7 @@ compile '*' do
   filter :erb
   filter :kramdown
   layout 'default'
+  filter :s3_media, :type => :html, :bucket => '7mp_test'
   filter :relativize_paths, :type => :html
 end
 
