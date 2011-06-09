@@ -71,7 +71,7 @@
 
 
 @mixin textShadow($x,$y,$blur,$colour) {
-    text-shadow: $x+px $y+px $blur $colour;
+    text-shadow: $x+px $y+px $blur+px $colour;
     filter: dropshadow(color=$colour, offx=$x, offy=$y);
 }
 

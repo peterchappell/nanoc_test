@@ -89,6 +89,18 @@ route '/(atom|rss)/' do
 end
 
 ### --------------------------
+### Favicon and icons
+### --------------------------
+
+compile '/(favicon|apple\-touch.*?)/' do
+    # nothing
+end
+
+route '/(favicon|apple\-touch.*?)/' do
+    item.identifier.chop + '.' + item[:extension]
+end
+
+### --------------------------
 ### Content
 ### --------------------------
 

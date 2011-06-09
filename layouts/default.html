@@ -10,6 +10,8 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>7 million pockets - <%= @item[:title] %></title>
+  <link rel="alternate" type="application/rss+xml" title="7 Million Pockets - Latest Writings" href="/rss.xml" />
+  <link rel="alternate" type="application/atom+xml" title="7 Million Pockets - Latest Writings" href="/atom.xml" />
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -27,24 +29,27 @@
 
   <div id="outerContainer">
     <header id="siteBanner" role="banner">
-        <h1>7 million pockets</h1>
-        <nav id="mainMenu">
-<!--
-            <% home_page = @items.find { |i| i.reps[0].path == '/' } %>
-            <ul>
-                <li><%= link_to(home_page[:title], home_page.reps[0]) %></li>
-                <% home_page.children.each do |page| %>
-                    <li><%= link_to(page[:title], page.reps[0]) %></li>
-                <% end %>
-            </ul>
--->
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/contents/">Contents</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>7 million pockets</h1>
+            <nav id="mainMenu">
+                <!--
+                <% home_page = @items.find { |i| i.reps[0].path == '/' } %>
+                <ul>
+                    <li><%= link_to(home_page[:title], home_page.reps[0]) %></li>
+                    <% home_page.children.each do |page| %>
+                        <li><%= link_to(page[:title], page.reps[0]) %></li>
+                    <% end %>
+                </ul>
+                -->
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contents/">Contents</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/rss.xml">RSS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div id="main" role="main">
         <div class="container">
