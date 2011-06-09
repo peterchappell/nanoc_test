@@ -77,6 +77,18 @@ route '/_media/*' do
 end
 
 ### --------------------------
+### RSS
+### --------------------------
+
+compile /(rss|atom)/ do
+    filter :erb unless rep.binary? # e.g. rss.png image
+end
+
+route '/(atom|rss)/' do
+    item.identifier.chop + '.xml'
+end
+
+### --------------------------
 ### Content
 ### --------------------------
 
