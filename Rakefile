@@ -81,4 +81,13 @@ task :upload_site_s3 do
     puts "#{tally} files uploaded"
 end
 
+# ######
+# TASK TO GENERATE PDFs
+# ######
+desc "Create PDF files"
+task :create_pdf_files do
+    puts "not working"
+end
+
+
 

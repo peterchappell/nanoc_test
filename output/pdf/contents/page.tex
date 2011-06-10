@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{graphicx,hyperref}
+
+% Packages required to support encoding
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+% Packages required by code
+
+
+% Packages always used
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage[usenames,dvipsnames]{color}
+\hypersetup{colorlinks=true,urlcolor=blue}
+
+\begin{document}
+
+\section{Table of contents}\hypertarget{table-of-contents}{}\label{table-of-contents}
+
+This is the table of contents page\ldots{}
+
+\textless{}\% contents\_home = @items.find \{ \textbar{}i\textbar{} i.reps[0].path == `/contents/' \} \%\textgreater{}
+\textless{}ul class="toc"\textgreater{}
+\textless{}\%= toc (contents\_home) \%\textgreater{}
+\textless{}/ul\textgreater{}
+
+
+
+\end{document}

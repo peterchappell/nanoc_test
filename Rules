@@ -112,8 +112,17 @@ compile '*' do
   filter :relativize_paths, :type => :html
 end
 
+compile '/contents/*', :rep => :tex do
+    filter :kramdown_tex
+    layout 'latex'
+end
+
 route '*' do
   item.identifier + 'index.html'
+end
+
+route '/contents/*', :rep => :tex do
+    '/pdf' + item.identifier + 'page.tex'
 end
 
 ### --------------------------

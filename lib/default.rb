@@ -3,6 +3,7 @@
 
 require 'lib/helpers/toc'
 require 'lib/filters/s3_media'
+require 'lib/filters/kramdown_tex'
 require 'lib/helpers/blogging'
 
 # Helpers
