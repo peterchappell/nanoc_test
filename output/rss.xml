@@ -9,11 +9,12 @@
     <description/>
     <item>
       <title>Xylophones are cool</title>
-      <description>&lt;h1 id="xylophones-are-cool"&gt;Xylophones are cool&lt;/h1&gt;
+      <description>
+&lt;h1 id="xylophones-are-cool"&gt;Xylophones are cool&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="/_media/xylophone1.jpg" alt="xylophone" title="This is a photo of a xylophone" /&gt;&lt;/p&gt;
+&lt;!-- ![xylophone](/_media/xylophone1.jpg 'This is a photo of a xylophone') --&gt;
 
 &lt;p&gt;In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.&lt;/p&gt;
 
@@ -36,7 +37,8 @@
     </item>
     <item>
       <title>Vibraphones are not phones</title>
-      <description>&lt;h1 id="vibraphones-are-not-phones"&gt;Vibraphones are not phones&lt;/h1&gt;
+      <description>
+&lt;h1 id="vibraphones-are-not-phones"&gt;Vibraphones are not phones&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
@@ -61,7 +63,8 @@
     </item>
     <item>
       <title>Other malleted instruments are hard to think of</title>
-      <description>&lt;h1 id="other-malleted-instruments-are-hard-to-think-of"&gt;Other malleted instruments are hard to think of&lt;/h1&gt;
+      <description>
+&lt;h1 id="other-malleted-instruments-are-hard-to-think-of"&gt;Other malleted instruments are hard to think of&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
@@ -86,7 +89,8 @@
     </item>
     <item>
       <title>We're talking melodic percussive here all of a sudden</title>
-      <description>&lt;h1 id="were-talking-melodic-percussive-here-all-of-a-sudden"&gt;We&amp;rsquo;re talking melodic percussive here all of a sudden&lt;/h1&gt;
+      <description>
+&lt;h1 id="were-talking-melodic-percussive-here-all-of-a-sudden"&gt;We&amp;rsquo;re talking melodic percussive here all of a sudden&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
@@ -111,7 +115,8 @@
     </item>
     <item>
       <title>Is glockenspiel is metal?</title>
-      <description>&lt;h1 id="is-glockenspiel-is-metal"&gt;Is glockenspiel is metal?&lt;/h1&gt;
+      <description>
+&lt;h1 id="is-glockenspiel-is-metal"&gt;Is glockenspiel is metal?&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
@@ -135,7 +140,8 @@
     </item>
     <item>
       <title>Sometimes I get confused and think it's the other way round. Or maybe I'm confused now</title>
-      <description>&lt;h1 id="sometimes-i-get-confused-and-think-its-the-other-way-round-or-maybe-im-confused-now"&gt;Sometimes I get confused and think it&amp;rsquo;s the other way round. Or maybe I&amp;rsquo;m confused now&lt;/h1&gt;
+      <description>
+&lt;h1 id="sometimes-i-get-confused-and-think-its-the-other-way-round-or-maybe-im-confused-now"&gt;Sometimes I get confused and think it&amp;rsquo;s the other way round. Or maybe I&amp;rsquo;m confused now&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
@@ -160,11 +166,12 @@
     </item>
     <item>
       <title>The glock rocks</title>
-      <description>&lt;h1 id="the-glock-rocks"&gt;The glock rocks&lt;/h1&gt;
+      <description>
+&lt;h1 id="the-glock-rocks"&gt;The glock rocks&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="/_media/glock1.png" alt="glock" title="This is a photo of a glock" /&gt;&lt;/p&gt;
+&lt;!-- ![glock](/_media/glock1.png 'This is a photo of a glock') --&gt;
 
 &lt;p&gt;In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.&lt;/p&gt;
 

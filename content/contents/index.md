@@ -1,5 +1,4 @@
-Table of contents
-====================
+#Table of contents
 
 This is the table of contents page...
 

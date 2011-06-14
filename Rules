@@ -101,6 +101,20 @@ route '/(favicon|apple\-touch.*?)/' do
 end
 
 ### --------------------------
+### Compiled version of book
+### --------------------------
+
+compile '/_compiled/*' do
+    filter :erb
+    filter :kramdown_tex
+    layout 'latex'
+end
+
+route '/_compiled/*' do
+    '/pdf' + item.identifier + 'page.tex'
+end
+
+### --------------------------
 ### Content
 ### --------------------------
 
@@ -112,17 +126,8 @@ compile '*' do
   filter :relativize_paths, :type => :html
 end
 
-compile '/contents/*', :rep => :tex do
-    filter :kramdown_tex
-    layout 'latex'
-end
-
 route '*' do
   item.identifier + 'index.html'
-end
-
-route '/contents/*', :rep => :tex do
-    '/pdf' + item.identifier + 'page.tex'
 end
 
 ### --------------------------
