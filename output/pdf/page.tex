@@ -1,7 +1,7 @@
 \documentclass{article}
-\usepackage{graphicx,hyperref}
 
 % Packages required to support encoding
+\usepackage{graphicx}
 \usepackage{ucs}
 \usepackage[utf8x]{inputenc}
 
@@ -16,15 +16,17 @@
 
 \begin{document}
 
-\section{The Book}\hypertarget{the-book}{}\label{the-book}
-
-This is the whole book in one page
-
 \section{Xylophones are cool}\hypertarget{xylophones-are-cool}{}\label{xylophones-are-cool}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.
 
-% ![xylophone](/_media/xylophone1.jpg 'This is a photo of a xylophone')
+\begin{figure}
+\begin{center}
+\includegraphics[width=100mm]{_media/xylophone1.jpg}
+\end{center}
+\caption{xylophone}
+
+\end{figure}
 
 In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.
 
@@ -41,7 +43,13 @@ Proin suscipit gravida mauris ut cursus. Aliquam placerat faucibus interdum. Nam
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.
 
-% ![glock](/_media/glock1.png 'This is a photo of a glock')
+\begin{figure}
+\begin{center}
+\includegraphics[width=100mm]{_media/glock1.png}
+\end{center}
+\caption{glock}
+
+\end{figure}
 
 In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.
 

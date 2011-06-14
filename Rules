@@ -71,9 +71,8 @@ compile '/_media/*' do
 end
 
 route '/_media/*' do
-    # item.identifier.chop + '.' + item[:extension]
-    # don't put media in output any more - it gets uploaded to S3
-    nil
+    # website gets media from Amazon S3 but PDF needs a local copy
+    '/pdf/' + item.identifier.chop + '.' + item[:extension]
 end
 
 ### --------------------------
@@ -108,10 +107,11 @@ compile '/_compiled/*' do
     filter :erb
     filter :kramdown_tex
     layout 'latex'
+    filter :rewrite_image_paths, :type => :tex, :bucket => '7mp_test'
 end
 
 route '/_compiled/*' do
-    '/pdf' + item.identifier + 'page.tex'
+    '/pdf/' + 'page.tex'
 end
 
 ### --------------------------
@@ -122,7 +122,7 @@ compile '*' do
   filter :erb
   filter :kramdown
   layout 'default'
-  filter :s3_media, :type => :html, :bucket => '7mp_test'
+  filter :rewrite_image_paths, :type => :html, :bucket => '7mp_test'
   filter :relativize_paths, :type => :html
 end
 

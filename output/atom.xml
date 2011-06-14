@@ -3,8 +3,8 @@
   <id>http://sevenmillionpockets.heroku.com/</id>
   <title>7 million pockets - Articles (Atom Feed)</title>
   <updated>2011-06-09T10:40:00Z</updated>
-  <link href="http://sevenmillionpockets.heroku.com" rel="alternate"/>
-  <link href="http://sevenmillionpockets.heroku.com/atom/" rel="self"/>
+  <link rel="alternate" href="http://sevenmillionpockets.heroku.com"/>
+  <link rel="self" href="http://sevenmillionpockets.heroku.com/atom/"/>
   <author>
     <name></name>
     <uri>http://sevenmillionpockets.heroku.com</uri>
@@ -13,9 +13,9 @@
     <id>tag:sevenmillionpockets.heroku.com,2011-06-09:/contents/1/</id>
     <title>Xylophones are cool</title>
     <published>2011-06-09T10:40:00Z</published>
-    <updated>2011-06-14T05:34:53Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/1/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <updated>2011-06-14T05:49:35Z</updated>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/1/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -23,7 +23,7 @@
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.</p>
 
-<!-- ![xylophone](/_media/xylophone1.jpg 'This is a photo of a xylophone') -->
+<p><img src="/_media/xylophone1.jpg" alt="xylophone" title="This is a photo of a xylophone" /></p>
 
 <p>In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.</p>
 
@@ -44,8 +44,8 @@
     <title>Vibraphones are not phones</title>
     <published>2011-06-08T10:40:00Z</published>
     <updated>2011-06-14T05:35:03Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/3/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/3/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -72,8 +72,8 @@
     <title>Other malleted instruments are hard to think of</title>
     <published>2011-06-07T10:40:00Z</published>
     <updated>2011-06-14T05:35:07Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/4/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/4/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -100,8 +100,8 @@
     <title>We're talking melodic percussive here all of a sudden</title>
     <published>2011-06-06T10:40:00Z</published>
     <updated>2011-06-14T05:35:11Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/5/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/5/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -128,8 +128,8 @@
     <title>Is glockenspiel is metal?</title>
     <published>2011-06-05T10:40:00Z</published>
     <updated>2011-06-14T05:35:34Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/glock/2.1/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/glock/2.1/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -155,8 +155,8 @@
     <title>Sometimes I get confused and think it's the other way round. Or maybe I'm confused now</title>
     <published>2011-06-04T10:40:00Z</published>
     <updated>2011-06-14T05:35:22Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/glock/2.2/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/glock/2.2/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -182,9 +182,9 @@
     <id>tag:sevenmillionpockets.heroku.com,2011-06-03:/contents/glock/</id>
     <title>The glock rocks</title>
     <published>2011-06-03T10:40:00Z</published>
-    <updated>2011-06-14T05:33:53Z</updated>
-    <link href="http://sevenmillionpockets.heroku.com/contents/glock/" rel="alternate"/>
-    <category term="" scheme="http://sevenmillionpockets.heroku.com/tags//"/>
+    <updated>2011-06-14T05:49:16Z</updated>
+    <link rel="alternate" href="http://sevenmillionpockets.heroku.com/contents/glock/"/>
+    <category scheme="http://sevenmillionpockets.heroku.com/tags//" term=""/>
     <content type="html">
 <![CDATA[
 
@@ -192,7 +192,7 @@
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.</p>
 
-<!-- ![glock](/_media/glock1.png 'This is a photo of a glock') -->
+<p><img src="/_media/glock1.png" alt="glock" title="This is a photo of a glock" /></p>
 
 <p>In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.</p>
 

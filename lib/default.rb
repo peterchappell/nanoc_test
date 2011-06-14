@@ -3,7 +3,7 @@
 
 require 'lib/helpers/toc'
 require 'lib/helpers/compile-book'
-require 'lib/filters/s3_media'
+require 'lib/filters/image_paths'
 require 'lib/filters/kramdown_tex'
 require 'lib/helpers/blogging'
 
