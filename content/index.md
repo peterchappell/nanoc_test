@@ -1,8 +1,15 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit [^1]. Mauris dapibus porta lacus, ac rhoncus risus placerat non[^test]. Mauris mollis tortor ac metus porta nec rutrum [elit ultrices][ref1].
 
-A Second Level Header
----------------------
+## Download
+
+Download the book [here](/pdf/7-million-pockets.pdf)
+
+## RSS
+
+Subscribe to the RSS feed [here](/rss.xml) or [here](/atom.xml)
+
+##A Second Level Header
 
 Nam ac felis nisi, quis scelerisque velit. [Donec interdum eros](/contents/glock/ "This is a link to the page on the glock") a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio. In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis[^2].
 
