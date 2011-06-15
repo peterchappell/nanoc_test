@@ -12,23 +12,24 @@ FOR CUSTOM STUFF
     text-align: center;
     .container {
         background: transparent url(../img/style/bg_pocket.png) no-repeat 50% 50%;
-        padding: 1em 0 3.5em;
+        padding: 1em 0;
     }
     h1 {
-        font-size: 4em;
+        font-size: 2em;
         line-height: 1em;
+        margin: 0;
         @include textShadow(1,1,0,#fff);
     }
 }
 
 #mainMenu {
-    padding-top: 1.5em;
+    padding-top: 1em;
     ul {
         font-size: 1.1em;
         @include noBullets;
         a {
             display: block;
-            padding:  0.25em 1em;
+            padding:  0 1em;
         }
     }
 }
