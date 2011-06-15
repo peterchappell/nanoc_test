@@ -14,7 +14,7 @@ class ImagePathsFilter < Nanoc3::Filter
         # doesn't work though
         # '\write18{wget ' + 'https://s3.amazonaws.com/' + params[:bucket] + '/' + $1 + '}' + '
         # ' + '\includegraphics[width=40mm]{' + $1 + '}'
-        '\includegraphics[width=100mm]{./_media/' + $1 + '}'
+        '\includegraphics[width=100mm]{output/pdf/_media/' + $1 + '}'
       end
     else
       raise RuntimeError.new(

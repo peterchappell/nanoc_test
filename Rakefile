@@ -33,7 +33,7 @@ end
 # TASK TO COMPILE THE SITE AND MANAGE ASSETS
 # ######
 desc "Compile the site using nanoc and put any new assets up on Amazon"
-task :compile => [:compile_only, :upload_assets] do
+task :compile => [:compile_only, :upload_assets, :download_assets, :create_pdf] do
     puts "compiled the site and uploaded the assets"
 end
 
@@ -56,6 +56,14 @@ task :upload_assets do
       end
     end
     puts "#{tally} files uploaded"
+end
+
+# ######
+# TASK TO DOWNLOAD ASSETS FROM S3
+# ######
+desc "Download the assets (_media) from Amazon S3 to local (for PDF creation)"
+task :download_assets do
+    #TODO
 end
 
 # ######
@@ -85,8 +93,20 @@ end
 # TASK TO GENERATE PDFs
 # ######
 desc "Create PDF files"
-task :create_pdf_files do
-    puts "not working"
+task :create_pdf do
+    # do it once
+    sh 'pdflatex -output-directory=output/pdf output/pdf/7-million-pockets.tex' do | ok, res |
+        if ! ok
+            puts "pattern not found (status = #{res.exitstatus})"
+        end
+    end
+    # do it twice to make sure the TOC is compiled (apparently it's a LaTeX thing)
+    sh 'pdflatex -output-directory=output/pdf output/pdf/7-million-pockets.tex' do | ok, res |
+        if ! ok
+            puts "pattern not found (status = #{res.exitstatus})"
+        end
+    end
+    puts 'created the PDF (or tried to at least)'
 end
 
 

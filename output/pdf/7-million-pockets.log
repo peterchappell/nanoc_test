@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.5.25)  15 JUN 2011 16:08
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.5.25)  15 JUN 2011 17:12
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
-**7-million-pockets.tex
-(./7-million-pockets.tex
+**output/pdf/7-million-pockets.tex
+(./output/pdf/7-million-pockets.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
@@ -341,7 +340,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 Package hyperref Warning: Option `pdftex' has already been used,
 (hyperref)                setting the option has no effect on input line 23.
 
-(./7-million-pockets.aux)
+(output/pdf/7-million-pockets.aux)
 \openout1 = `7-million-pockets.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -418,7 +417,7 @@ LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
 
-(./7-million-pockets.out) (./7-million-pockets.out)
+(output/pdf/7-million-pockets.out) (output/pdf/7-million-pockets.out)
 \@outlinefile=\write3
 \openout3 = `7-million-pockets.out'.
 
@@ -455,7 +454,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./7-million-pockets.toc
+(output/pdf/7-million-pockets.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
 )
@@ -471,30 +470,30 @@ l.40 \mainmatter
 
 ]
 Chapter 1.
-<./_media/xylophone1.jpg, id=59, 602.25pt x 367.3725pt>
-File: ./_media/xylophone1.jpg Graphic file (type jpg)
+<output/pdf/_media/xylophone1.jpg, id=59, 602.25pt x 367.3725pt>
+File: output/pdf/_media/xylophone1.jpg Graphic file (type jpg)
 
-<use ./_media/xylophone1.jpg> [1
+<use output/pdf/_media/xylophone1.jpg> [1
 
 
- <./_media/xylophone1.jpg>]
+ <./output/pdf/_media/xylophone1.jpg>]
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 56.
-
 (/usr/local/texlive/2010/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [2]
 Chapter 2.
-<./_media/glock1.png, id=72, 167.4255pt x 87.4467pt>
-File: ./_media/glock1.png Graphic file (type png)
- <use ./_media/glock1.png>
-[3
+<output/pdf/_media/glock1.png, id=72, 167.4255pt x 87.4467pt>
+File: output/pdf/_media/glock1.png Graphic file (type png)
 
- <./_media/glock1.png>]
+<use output/pdf/_media/glock1.png> [3
+
+ <./output/pdf/_media/glock1.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 79.
- [4] [5] [6] [7]
+
+[4] [5] [6] [7]
 Chapter 3.
 [8
 
@@ -506,7 +505,7 @@ Chapter 4.
 Chapter 5.
 [12
 
-] [13] (./7-million-pockets.lof)
+] [13] (output/pdf/7-million-pockets.lof)
 \tf@lof=\write5
 \openout5 = `7-million-pockets.lof'.
 
@@ -515,19 +514,20 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
- (./7-million-pockets.aux)
+
+(output/pdf/7-million-pockets.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package rerunfilecheck Info: File `7-million-pockets.out' has not changed.
-(rerunfilecheck)             Checksum: 78040926C100A2705F442A14E5A37DFE;602.
+(rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 6065 strings out of 493747
- 94069 string characters out of 3143546
- 169187 words of memory out of 3000000
+ 6066 strings out of 493747
+ 94325 string characters out of 3143546
+ 169188 words of memory out of 3000000
  9167 multiletter control sequences out of 15000+200000
  71913 words of font info for 51 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,8n,30p,768b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,8n,30p,779b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2010/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2010/
 texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2010/texmf-dist
@@ -538,7 +538,7 @@ m/lmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/lm/lmr17.pfb
 /texlive/2010/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/201
 0/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2010/texmf-dist
 /fonts/type1/public/lm/lmro10.pfb>
-Output written on 7-million-pockets.pdf (16 pages, 684335 bytes).
+Output written on output/pdf/7-million-pockets.pdf (16 pages, 684335 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
