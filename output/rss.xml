@@ -110,6 +110,8 @@
       <description>
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.&lt;/p&gt;
 
+&lt;h2 id="a-sub-heading"&gt;A sub-heading&lt;/h2&gt;
+
 &lt;p&gt;In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -118,6 +120,8 @@
   &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
   &lt;li&gt;Maecenas pharetra nunc eget ligula lacinia eget dignissim enim malesuada.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id="a-sub-sub-heading"&gt;A sub-sub-heading&lt;/h3&gt;
 
 &lt;p&gt;Proin suscipit gravida mauris ut cursus. Aliquam placerat faucibus interdum. Nam in fringilla ipsum. Nullam tincidunt tristique lorem et blandit. Cras faucibus pellentesque est, feugiat feugiat massa posuere nec. Nullam mattis accumsan ante, eu sollicitudin tellus tempus in. Donec eget nunc mauris. Nunc non libero est, sit amet rutrum dolor. Nam malesuada sem in orci tincidunt vulputate. Morbi orci arcu, volutpat et adipiscing ut, ultricies et nisi. Ut aliquam commodo urna, non iaculis metus luctus vel. Fusce tincidunt sapien sit amet lacus aliquam consequat ut in lectus. Sed laoreet risus non augue placerat laoreet. Vestibulum tortor velit, volutpat eu condimentum et, sagittis vel odio. Praesent ullamcorper varius ligula sed aliquam.&lt;/p&gt;
 </description>

@@ -9,7 +9,7 @@ module CompileBookHelper
         compiled_buffer << '
 '+ '#'*page[:level] + page[:title] + '
 '
-        compiled_buffer << page.raw_content
+        compiled_buffer << page.raw_content.gsub(/#[#].?/,'######')
     end
 
     # Add children to sitemap, recursively

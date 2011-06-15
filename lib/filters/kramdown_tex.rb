@@ -10,15 +10,3 @@ class KramdownToTex < Nanoc3::Filter
 
 end
 
-class KramdownFigureFloats < Nanoc3::Filter
-
-    identifier :kramdown_fix_figure_floats
-    type :text
-    def run(content, params={})
-      content.gsub(/(\\begin\{figure\})/) do
-        $1 + '[htb]'
-      end
-    end
-
-end
-
