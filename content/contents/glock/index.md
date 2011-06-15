@@ -5,11 +5,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta la
 
 In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.
 
-* Morbi velit urna, rutrum nec suscipit ac, imperdiet vel lacus.
+* Morbi velit urna, rutrum nec suscipit ac[^1], imperdiet vel lacus.
 * Duis suscipit faucibus sapien, vel auctor elit volutpat ac.
 * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 * Maecenas pharetra nunc eget ligula lacinia eget dignissim enim malesuada.
 
 Proin suscipit gravida mauris ut cursus. Aliquam placerat faucibus interdum. Nam in fringilla ipsum. Nullam tincidunt tristique lorem et blandit. Cras faucibus pellentesque est, feugiat feugiat massa posuere nec. Nullam mattis accumsan ante, eu sollicitudin tellus tempus in. Donec eget nunc mauris. Nunc non libero est, sit amet rutrum dolor. Nam malesuada sem in orci tincidunt vulputate. Morbi orci arcu, volutpat et adipiscing ut, ultricies et nisi. Ut aliquam commodo urna, non iaculis metus luctus vel. Fusce tincidunt sapien sit amet lacus aliquam consequat ut in lectus. Sed laoreet risus non augue placerat laoreet. Vestibulum tortor velit, volutpat eu condimentum et, sagittis vel odio. Praesent ullamcorper varius ligula sed aliquam.
 
-
+[^1]: This is a foot note for "rutrum nec suscipit ac".

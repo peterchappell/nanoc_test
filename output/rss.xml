@@ -166,7 +166,7 @@
 &lt;p&gt;In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet nunc risus ac enim. Donec sit amet felis at sapien interdum mollis. Nunc hendrerit odio laoreet tellus aliquet dictum elementum nibh laoreet. Nulla eu massa a dolor ullamcorper suscipit semper nec ligula. Vivamus consectetur vehicula lectus quis sagittis.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Morbi velit urna, rutrum nec suscipit ac, imperdiet vel lacus.&lt;/li&gt;
+  &lt;li&gt;Morbi velit urna, rutrum nec suscipit ac&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, imperdiet vel lacus.&lt;/li&gt;
   &lt;li&gt;Duis suscipit faucibus sapien, vel auctor elit volutpat ac.&lt;/li&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
   &lt;li&gt;Maecenas pharetra nunc eget ligula lacinia eget dignissim enim malesuada.&lt;/li&gt;
@@ -174,6 +174,13 @@
 
 &lt;p&gt;Proin suscipit gravida mauris ut cursus. Aliquam placerat faucibus interdum. Nam in fringilla ipsum. Nullam tincidunt tristique lorem et blandit. Cras faucibus pellentesque est, feugiat feugiat massa posuere nec. Nullam mattis accumsan ante, eu sollicitudin tellus tempus in. Donec eget nunc mauris. Nunc non libero est, sit amet rutrum dolor. Nam malesuada sem in orci tincidunt vulputate. Morbi orci arcu, volutpat et adipiscing ut, ultricies et nisi. Ut aliquam commodo urna, non iaculis metus luctus vel. Fusce tincidunt sapien sit amet lacus aliquam consequat ut in lectus. Sed laoreet risus non augue placerat laoreet. Vestibulum tortor velit, volutpat eu condimentum et, sagittis vel odio. Praesent ullamcorper varius ligula sed aliquam.&lt;/p&gt;
 
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:1"&gt;
+      &lt;p&gt;This is a foot note for &amp;ldquo;rutrum nec suscipit ac&amp;rdquo;.&lt;a href="#fnref:1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
       <pubDate>Fri, 03 Jun 2011 10:40:00 -0000</pubDate>
       <guid>http://sevenmillionpockets.heroku.com/contents/glock/</guid>
