@@ -63,7 +63,7 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid $keylineColou
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+body { font:14px/1.5 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 
 /* Normalize monospace sizing:
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
@@ -147,7 +147,7 @@ body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
   color: $mainTextColour;
   /* Set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */
+  font-family: "Lucida Bright", Georgia, serif;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */

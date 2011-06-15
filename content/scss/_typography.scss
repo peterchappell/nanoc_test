@@ -14,36 +14,49 @@ http://topfunky.com/baseline-rhythm-calculator/ (gone?)
 http://pxtoem.com/ is also a useful tool
 */
 
+/* base size = 14 */
+/* baseline = 21 */
+
+/* sans serif for headings and menus etc */
+h1, h2, h3, h4, h5, h6, #mainMenu, .breadcrumbs {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 h1 {
-    font-size: 1.8462em; /* 24px */
-    line-height: 1.3333em; /* 32px */
-    margin: 0.6667em 0 0;
+	font-size: 2em;         /* 28px (28/14) */
+	line-height: 1.5em;     /* 42px (42/28) */
+	margin: 0.75em 0 0;     /* 21px (21/28) */
 }
 h2 {
-    font-size: 1.6923em; /* 22px */
-    line-height: 1.4545em; /* 32px */
-    margin: 0.7273em 0 0;
+    font-size: 1.5714em;    /* 22px (22/14) */
+    line-height: 1.9091em;  /* 42px (42/22) */
+    margin: 0.9545em 0 0;   /* 21px (21/22) */
 }
 h3 {
-	font-size: 1.5385em; /* 20px */
-	line-height: 1.6em; /* 32px */
-	margin: 0.8em 0 0;
+	font-size: 1.4286em;    /* 20px (20/14) */
+	line-height: 1.05em;    /* 21px (21/20) */
+	margin: 1.05em 0 0;     /* 21px (21/20) */
 }
 h4 {
-	font-size: 1.3846em; /* 18px */
-	line-height: 1.7778em; /* 32px */
-	margin: 0.8889em 0 0;
+	font-size: 1.2857em;    /* 18px (18/14) */
+	line-height: 1.1667em;  /* 21px (21/18) */
+	margin: 1.1667em 0 0;   /* 21px (21/18) */
 }
 h5 {
-	font-size: 1.2308em; /* 16px */
-	line-height: 1em; /* 16px */
-	margin: 1em 0 0;
+	font-size: 1.1429em;    /* 16px (16/14) */
+	line-height: 1.3126em;  /* 21px (21/16) */
+	margin: 1.3126em 0 0;   /* 21px (21/16) */
 }
 h6 {
-	font-size: 1.0769em; /* 14px */
-	line-height: 1.1429em; /* 16px */
-	margin: 1.1429em 0 0;
+	font-size: 1em;         /* 14px (14/14) */
+	line-height: 1.5em;     /* 21px (21/14) */
+	margin: 1.5em 0 0;      /* 21px (14/14) */
+}
+.small {
+	font-size: 0.8571em;    /* 12px (12/14) */
+	line-height: 1.75em;    /* 21px (21/12) */
+	margin: 1.75em 0 0;     /* 21px (21/12) */
 }
 p {
-    margin: 1em 0 0;
+    margin: 1.5em 0;
 }

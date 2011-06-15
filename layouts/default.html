@@ -45,16 +45,29 @@
     <div id="main" role="main">
         <div class="container">
         <% unless @item.reps[0].path == "/" %>
-            <span class="breadcrumbs">
+            <span class="breadcrumbs small">
                 <% breadcrumbs_trail.each do |b| %>
                     <% if b != @item then %>
-                        <%= link_to(  b[:title] , b.reps[0].path ) if b  %>
-                        <%= ' - ' %>
+                        <% title = b[:title] %>
+                        <% if b[:menuTitle] %>
+                            <% title = b[:menuTitle] %>
+                        <% end %>
+                        <%= link_to(  title , b.reps[0].path ) if b  %>
+                        <%= ' &#0187; ' %>
                     <% end %>
                 <%end%>
             </span>
         <% end %>
-        <%= yield %>
+        <h1><%= @item[:title] %></h1>
+        <% columnClass = "" %>
+        <%
+        if @item[:contentContainerClass]
+            columnClass = @item[:contentContainerClass]
+        end
+        %>
+        <div id="mainContentContainer" class="<%= columnClass %>">
+            <%= yield %>
+        </div>
         </div>
     </div>
     <footer id="siteFooter">

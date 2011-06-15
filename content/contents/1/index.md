@@ -1,6 +1,3 @@
-
-# Xylophones are cool
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus porta lacus, ac rhoncus risus placerat non. Mauris mollis tortor ac metus porta nec rutrum elit ultrices. Nam ac felis nisi, quis scelerisque velit. Donec interdum eros a diam sollicitudin convallis. Donec lacinia lacus quis erat elementum rutrum. Proin ut augue sem. Nam quis turpis sem. Nunc et nisi orci. Nunc fringilla, urna ut interdum vehicula, lorem velit euismod enim, at faucibus dolor quam quis ligula. Vestibulum sagittis augue at purus pharetra ultrices. Nullam ac enim tortor. Nulla accumsan vehicula leo, eget mollis magna vehicula at. Nulla ante nisi, rutrum eget varius cursus, commodo sit amet odio.
 
 ![xylophone](/_media/xylophone1.jpg 'This is a photo of a xylophone')
