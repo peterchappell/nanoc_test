@@ -105,7 +105,7 @@ end
 
 compile '/_compiled/*' do
     filter :erb
-    filter :kramdown_tex
+    filter :kramdown_tex, :latex_headers => ['chapter','section','subsection','subsubsection','paragraph','subparagraph']
     filter :kramdown_fix_figure_floats
     layout 'latex'
     filter :rewrite_image_paths, :type => :tex, :bucket => '7mp_test'
