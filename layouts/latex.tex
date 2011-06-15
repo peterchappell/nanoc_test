@@ -6,17 +6,41 @@
 \usepackage{ucs}
 \usepackage[utf8x]{inputenc}
 
-% Packages required by code
-
+% Packages for fonts
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 
 % Packages always used
-\usepackage{hyperref}
 \usepackage{xspace}
 \usepackage[usenames,dvipsnames]{color}
-\hypersetup{colorlinks=true,urlcolor=blue}
+\usepackage{hyperref}
+\hypersetup{colorlinks,%
+            citecolor=black,%
+            filecolor=black,%
+            linkcolor=blue,%
+            urlcolor=blue,%
+            pdftex}
+
+% adjust margins etc
+\addtolength{\hoffset}{-1cm}
+\addtolength{\textwidth}{2cm}
+
+% --------------
+% BEGIN DOCUMENT
+% --------------
 
 \begin{document}
+\frontmatter
+\title{7 Million Pockets}
+\author{Tobin Harris}
+\maketitle
+\tableofcontents
 
+\mainmatter
 <%= yield %>
+
+\appendix
+\listoffigures
 
 \end{document}

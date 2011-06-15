@@ -113,7 +113,7 @@ compile '/_compiled/*' do
 end
 
 route '/_compiled/*' do
-    '/pdf/' + 'page.tex'
+    '/pdf/' + '7-million-pockets.tex'
 end
 
 ### --------------------------
