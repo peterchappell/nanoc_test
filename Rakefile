@@ -70,12 +70,17 @@ task :download_assets, :pdf_or_content do |t,args|
     else
         download_path = 'output/pdf/_media/'
     end
-    puts 'Downloading media from Amazon S3'
+    puts 'Downloading media from Amazon S3 to ' + download_path
     @files = AWS::S3::Bucket.find('7mp_test').objects
     @files.each do |file|
+        puts '------'
         puts file.key
-        if FileTest.exists?(download_path + file.key)
-            puts 'file already exists'
+        download_file = download_path + file.key
+        if FileTest.exists?(download_file) && (Time.parse(file.about[:'last-modified']) < open(download_file).mtime)
+            puts 'server modified: ' + file.about[:'last-modified']
+            puts 'local modified: ' + open(download_file).mtime.asctime
+            puts 'local newer: ' + (open(download_file).mtime > Time.parse(file.about[:'last-modified'])).to_s
+            puts 'file already exists locally and is more recent than S3'
         else
             new_file = File.new(download_path+file.key,'w')
             new_file.puts file.value
