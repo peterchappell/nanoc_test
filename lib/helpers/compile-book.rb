@@ -7,7 +7,9 @@ module CompileBookHelper
     # Add page
     if page[:type] == 'article'
         compiled_buffer << '
+
 '+ '#'*page[:level] + page[:title] + '
+
 '
         compiled_buffer << page.raw_content.gsub(/#[#].?/,'######')
     end

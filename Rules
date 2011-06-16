@@ -105,7 +105,6 @@ end
 
 compile '/_compiled/*' do
     filter :erb
-    #filter :pdfFix_headings
     filter :kramdown_tex, :latex_headers => ['chapter','section','subsection','subsubsection','subsubsection','subsubsection']
     filter :pdfFix_figure_floats
     layout 'latex'
