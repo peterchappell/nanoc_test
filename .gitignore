@@ -5,4 +5,6 @@
 *.iml
 /_scratch
 /content/_media/*
+!/content/_media/.gitignore
 /output/pdf/_media/*
+!/output/pdf/_media/.gitignore
