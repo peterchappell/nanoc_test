@@ -4,3 +4,5 @@
 /tmp
 *.iml
 /_scratch
+/content/_media/*
+/output/pdf/_media/*

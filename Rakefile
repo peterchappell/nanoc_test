@@ -1,6 +1,7 @@
 require 'nanoc3/tasks'
 require 'aws/s3'
 require 'yaml'
+#require 'net/http'
 
 # SETUP FOR AWS S3 UPLOAD
 AWS::S3::Base.establish_connection!(
@@ -62,8 +63,27 @@ end
 # TASK TO DOWNLOAD ASSETS FROM S3
 # ######
 desc "Download the assets (_media) from Amazon S3 to local (for PDF creation)"
-task :download_assets do
-    #TODO
+task :download_assets, :pdf_or_content do |t,args|
+    download_to = args[:pdf_or_content] || 'pdf'
+    if download_to == 'content'
+        download_path = 'content/_media/'
+    else
+        download_path = 'output/pdf/_media/'
+    end
+    puts 'Downloading media from Amazon S3'
+    @files = AWS::S3::Bucket.find('7mp_test').objects
+    @files.each do |file|
+        puts file.key
+        if FileTest.exists?(download_path + file.key)
+            puts 'file already exists'
+        else
+            new_file = File.new(download_path+file.key,'w')
+            new_file.puts file.value
+            new_file.close
+            puts 'file downloaded'
+        end
+    end
+    puts 'Finished downloading media from Amazon S3'
 end
 
 # ######

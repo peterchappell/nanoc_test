@@ -12,8 +12,8 @@ class ImagePathsFilter < Nanoc3::Filter
       content.gsub(/.*\/_media\/(.*)\}/) do
         # this would have been good - the idea is that we download from S3 to build the pdf - http://tex.stackexchange.com/questions/5433/can-i-use-an-image-located-on-the-web-in-a-latex-document
         # doesn't work though
-        # '\write18{wget ' + 'https://s3.amazonaws.com/' + params[:bucket] + '/' + $1 + '}' + '
-        # ' + '\includegraphics[width=40mm]{' + $1 + '}'
+        #'\write18{wget --directory-prefix=output/pdf/_media/' + 'https://s3.amazonaws.com/' + params[:bucket] + '/' + $1 + '}' + '
+        #' + '\includegraphics[width=40mm]{' + $1 + '}'
         '\includegraphics[width=100mm]{output/pdf/_media/' + $1 + '}'
       end
     else
