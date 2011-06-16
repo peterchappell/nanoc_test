@@ -22,6 +22,8 @@ end
 
 
 
+
+
 # ######
 # TASK TO COMPILE THE SITE
 # ######
@@ -35,7 +37,9 @@ end
 # ######
 desc "Compile the site using nanoc and put any new assets up on Amazon"
 task :compile => [:compile_only, :upload_assets, :download_assets, :create_pdf] do
-    puts "compiled the site and uploaded the assets"
+    puts
+    puts
+    puts "compiled the site, uploaded changed or new assets to Amazon, created PDF version"
 end
 
 # ######
@@ -43,6 +47,8 @@ end
 # ######
 desc "Upload just the assets (_media) to Amazon S3)"
 task :upload_assets do
+    puts
+    puts 'Uploading new or changed media assets to Amazon S3...'
     class MrBucket < AWS::S3::S3Object
         set_current_bucket_to '7mp_test'
     end
@@ -50,7 +56,7 @@ task :upload_assets do
     Dir.chdir("content/_media/") do
       Dir["**/*.{jpg,gif,png}"].each do |f|
         if file_changed(f)
-          puts "updating #{f}"
+          puts "uploading #{f}"
           MrBucket.store("#{f}", open(f), :access => :public_read)
           tally += 1
         end
@@ -70,10 +76,14 @@ task :download_assets, :pdf_or_content do |t,args|
     else
         download_path = 'output/pdf/_media/'
     end
-    puts 'Downloading media from Amazon S3 to ' + download_path
+    puts
+    puts 'Downloading media from Amazon S3 to ' + download_path + '...'
+    if !File.exists?(download_path)
+        puts 'creating ' + download_path
+        Dir.mkdir(download_path)
+    end
     @files = AWS::S3::Bucket.find('7mp_test').objects
     @files.each do |file|
-        puts '------'
         puts file.key
         download_file = download_path + file.key
         if FileTest.exists?(download_file) && (Time.parse(file.about[:'last-modified']) < open(download_file).mtime)
@@ -92,33 +102,13 @@ task :download_assets, :pdf_or_content do |t,args|
 end
 
 # ######
-# TASK TO UPLOAD ENTIRE SITE TO S3
-# ######
-desc "Upload entire static site to Amazon S3"
-task :upload_site_s3 do
-    class MrBucket < AWS::S3::S3Object
-        set_current_bucket_to '7mpweb'
-    end
-    tally = 0
-    Dir.chdir("output/") do
-      Dir["**/*.*"].each do |f|
-        if File.directory?(f)
-          puts f
-        elsif file_changed(f)
-          puts "updating #{f}"
-          MrBucket.store("#{f}", open(f), :access => :public_read)
-          tally += 1
-        end
-      end
-    end
-    puts "#{tally} files uploaded"
-end
-
-# ######
 # TASK TO GENERATE PDFs
 # ######
 desc "Create PDF files"
 task :create_pdf do
+    puts
+    puts 'Creating the PDF...'
+    puts
     # do it once
     sh 'pdflatex -output-directory=output/pdf output/pdf/7-million-pockets.tex' do | ok, res |
         if ! ok
@@ -131,8 +121,59 @@ task :create_pdf do
             puts "pattern not found (status = #{res.exitstatus})"
         end
     end
+    puts
     puts 'created the PDF (or tried to at least)'
 end
 
+# ######
+# TASK TO UPLOAD THE OUTPUT FOLDER OF THE SITE TO S3
+# ######
+desc "Upload entire static site to Amazon S3"
+task :upload_site_s3 do
+    class MrBucket < AWS::S3::S3Object
+        set_current_bucket_to '7mpweb'
+    end
+    tally = 0
+    Dir.chdir("output/") do
+      Dir["**/*.*"].each do |f|
+        if File.directory?(f)
+          puts f
+        elsif f.match('output/pdf/_media') != nil
+          puts 'don\'t need to upload /pdf/_media'
+        elsif file_changed(f)
+          puts "uploading #{f}"
+          MrBucket.store("#{f}", open(f), :access => :public_read)
+          tally += 1
+        end
+      end
+    end
+    puts "#{tally} files uploaded"
+end
 
+
+
+# ######
+# TASK TO CREATE A NEW BOOK PAGE ITEM
+# ######
+
+task :create_book_page do
+  # Check path
+  if ENV['path'].nil?
+    $stderr.puts('You need to specify the path, e.g. rake create_book_page path=/contents/foo/')
+    break
+  end
+  # Create item
+  site = Nanoc3::Site.new('.')
+  site.data_sources[0].create_item(
+    'Hello, I am a new book page!', # the content
+    { # the attributes
+      :title => 'New page title',
+      :order => 10,
+      :level => 1,
+      :type => 'article',
+      :date => Time.now
+    },
+    ENV['path'].cleaned_identifier # the path
+  )
+end
 
