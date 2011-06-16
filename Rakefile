@@ -156,24 +156,47 @@ end
 # TASK TO CREATE A NEW BOOK PAGE ITEM
 # ######
 
+desc "Creates a new page for the book"
 task :create_book_page do
-  # Check path
-  if ENV['path'].nil?
-    $stderr.puts('You need to specify the path, e.g. rake create_book_page path=/contents/foo/')
-    break
-  end
-  # Create item
-  site = Nanoc3::Site.new('.')
-  site.data_sources[0].create_item(
-    'Hello, I am a new book page!', # the content
-    { # the attributes
-      :title => 'New page title',
-      :order => 10,
-      :level => 1,
-      :type => 'article',
-      :date => Time.now
-    },
-    ENV['path'].cleaned_identifier # the path
-  )
+    $KCODE = 'UTF8'
+    require 'active_support/core_ext'
+    require 'active_support/multibyte'
+    if !ENV['title']
+      $stderr.puts "\t[error] Missing title argument.\n\tusage: rake create_book_page title='page title' path='contents/[folder/s]/filename'"
+      exit 1
+    end
+    if !ENV['path']
+      $stderr.puts "\t[error] Missing path argument.\n\tusage: rake create_book_page title='page title' path='contents/[folder/s]/filename'"
+      exit 1
+    end
+
+    title = ENV['title']
+    full_path = 'content/' + ENV['path'] + '.md'
+    path = full_path.gsub(/(.*\/).*?.md/,'\1')
+    levels = (ENV['path'].count '/') - 1
+
+    if File.exists?(full_path)
+      $stderr.puts "\t[error] Exists #{full_path}"
+      exit 1
+    end
+
+    template = <<TEMPLATE
+---
+title: #{title}
+order: 10
+level: #{levels}
+type: article
+date: #{Time.now}
+---
+
+TODO: Add content to `#{full_path}`
+TEMPLATE
+
+    puts "making directory: " + path
+    Dir.mkdir(path) if !File.exists?(path)
+
+    File.open(full_path, 'w') { |f| f.write(template) }
+    $stdout.puts "\t[ok] Edit #{full_path}"
+
 end
 
