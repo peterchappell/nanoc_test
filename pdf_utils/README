@@ -1,0 +1,34 @@
+Copyright 2007 Ulf Lindgren
+
+This work may be distributed and/or modified under the conditions of the LaTeX
+Project Public License, either version 1.3 of this license or (at your option)
+any later version. The latest version of this license is in
+http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of LaTeX version
+2005/12/01 or later.
+
+This work has the LPPL maintenance status `maintained'.
+
+The Current Maintainer of this work is Ulf Lindgren.
+
+This work consists of all files listed in manifest.txt.
+
+This statement added 2010/12/10 by Clea F. Rees following correspondence
+between Ulf Lindgren and Karl Berry concerning licensing.
+
+
+
+FNCYCHAP Readme-file (Release 6 v1.34) 2007/07/31
+
+To install this put the sty file in a directory searched by TeX. 
+The LaTeX-base has to be post 1994/12/01.
+However, a warning will be given if the base is
+older than 1995/12/01.
+
+Print the user documentation contained in the file FncyChap.pdf
+
+Report bugs and questions to
+
+Ulf Lindgren 
+  ulf DOT a DOT lindgren AT ericsson DOT com
+

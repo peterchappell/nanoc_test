@@ -1,8 +1,8 @@
 \contentsline {chapter}{\numberline {1}Xylophones are cool}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}The glock rocks}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Is glockenspiel is metal?}{4}{section.2.1}
-\contentsline {subsubsection}{sub-heading}{4}{section*.2}
-\contentsline {subsubsection}{A sub-sub-heading}{5}{section*.3}
+\contentsline {subsubsection}{sub-heading}{4}{section*.1}
+\contentsline {subsubsection}{A sub-sub-heading}{5}{section*.2}
 \contentsline {section}{\numberline {2.2}Sometimes I get confused and think it's the other way round. Or maybe I'm confused now}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}And here we go with another page}{6}{subsection.2.2.1}
 \contentsline {chapter}{\numberline {3}Vibraphones are not phones}{8}{chapter.3}

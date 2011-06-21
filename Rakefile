@@ -20,6 +20,11 @@ def file_changed(f)
   return local_time > live_time
 end
 
+# Used for copying static files
+def copy(src,target)
+  mkdir_p target if ! File.exist?(target)
+  sh 'cp ' + src + '/* ' + target
+end
 
 
 
@@ -109,6 +114,8 @@ task :create_pdf do
     puts
     puts 'Creating the PDF...'
     puts
+    puts 'Getting the utils we need'
+    copy('pdf_utils','output/pdf/pdf_utils')
     # do it once
     sh 'pdflatex -output-directory=output/pdf output/pdf/7-million-pockets.tex' do | ok, res |
         if ! ok
