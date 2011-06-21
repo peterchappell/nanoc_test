@@ -16,4 +16,14 @@ In aliquam, velit non aliquet rutrum, arcu nunc adipiscing tellus, a imperdiet n
 
 Proin suscipit gravida mauris ut cursus. Aliquam placerat faucibus interdum. Nam in fringilla ipsum. Nullam tincidunt tristique lorem et blandit. Cras faucibus pellentesque est, feugiat feugiat massa posuere nec. Nullam mattis accumsan ante, eu sollicitudin tellus tempus in. Donec eget nunc mauris. Nunc non libero est, sit amet rutrum dolor. Nam malesuada sem in orci tincidunt vulputate. Morbi orci arcu, volutpat et adipiscing ut, ultricies et nisi. Ut aliquam commodo urna, non iaculis metus luctus vel. Fusce tincidunt sapien sit amet lacus aliquam consequat ut in lectus. Sed laoreet risus non augue placerat laoreet. Vestibulum tortor velit, volutpat eu condimentum et, sagittis vel odio. Praesent ullamcorper varius ligula sed aliquam.
 
+| Header1 | Description | Centred | Numbers |
+|:-------:|-------------|:-------:|--------:|
+| cell1   | This is a slightly longer description cell. You know, with a good bit of text in it. | cell2   | 0       |
+| cell4   | This is another description cell with some content in it. | cell5   | 3       |
+|----     |----
+| cell1   | This is some more description content. | cell2   | 9       |
+| cell4   | Another description. | cell5   | 7       |
+|=====    |=====
+| Foot1   | Foot1   | Foot2   | Foot3
+{: class="groups"}
 

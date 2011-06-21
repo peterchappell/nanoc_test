@@ -101,3 +101,11 @@ This uploads the entire static site to Amazon S3.
 
 This will create a new content file with the meta data (attributes) set and ready to go.
 
+# WIP notes
+
+### Tables
+Tables are a bit of a pain in the PDF version. The text in a table cell doesn't wrap by default. The only way
+I could get things to work was to do a regex gsub (in lib/filters/pdf_fixes.rb) to replace any left aligned
+cells (left aligned or default aligned in markdown) with a set width (I replace the first occurrence of `|l|`
+in the table with a `|p{0.5\textwidth}|`.
+

@@ -45,6 +45,53 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Proin suscipit gravida mauris ut cursus. Aliquam placerat faucibus interdum. Nam in fringilla ipsum. Nullam tincidunt tristique lorem et blandit. Cras faucibus pellentesque est, feugiat feugiat massa posuere nec. Nullam mattis accumsan ante, eu sollicitudin tellus tempus in. Donec eget nunc mauris. Nunc non libero est, sit amet rutrum dolor. Nam malesuada sem in orci tincidunt vulputate. Morbi orci arcu, volutpat et adipiscing ut, ultricies et nisi. Ut aliquam commodo urna, non iaculis metus luctus vel. Fusce tincidunt sapien sit amet lacus aliquam consequat ut in lectus. Sed laoreet risus non augue placerat laoreet. Vestibulum tortor velit, volutpat eu condimentum et, sagittis vel odio. Praesent ullamcorper varius ligula sed aliquam.&lt;/p&gt;
+
+&lt;table class="groups"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style="text-align: center"&gt;Header1&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th style="text-align: center"&gt;Centred&lt;/th&gt;
+      &lt;th style="text-align: right"&gt;Numbers&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;cell1&lt;/td&gt;
+      &lt;td&gt;This is a slightly longer description cell. You know, with a good bit of text in it.&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;cell2&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;cell4&lt;/td&gt;
+      &lt;td&gt;This is another description cell with some content in it.&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;cell5&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;cell1&lt;/td&gt;
+      &lt;td&gt;This is some more description content.&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;cell2&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;cell4&lt;/td&gt;
+      &lt;td&gt;Another description.&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;cell5&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;Foot1&lt;/td&gt;
+      &lt;td&gt;Foot1&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;Foot2&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;Foot3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
 </description>
       <pubDate>Wed, 08 Jun 2011 10:40:00 -0000</pubDate>
       <guid>http://sevenmillionpockets.heroku.com/contents/3/</guid>
