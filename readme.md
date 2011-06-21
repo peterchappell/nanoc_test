@@ -73,25 +73,31 @@ This is a demo site built using the [nanoc framework](http://nanoc.stoneship.org
 ## Rake tasks
 
 `rake compile`
+
 This will compile the site (equivalent to `nanoc compile`), upload any new assets from /content/_media
 to Amazon S3, download any new or changed assets from Amazon S3 (ready for PDF) and then create a PDF
 version of the site.
 
 `rake upload_assets`
+
 This will put any new or changed assets up on Amazon S3.
 
 `rake download_assets`
+
 This will fetch new or changed assets from Amazon S3. `rake download_assets content` downloads to the
 `\content\_media\` folder. `rake download_assets pdf` downloads to `\output\pdf\` in preparation for the
 pdf creation (this is the default behaviour).
 
 `rake create_pdf`
+
 This creates a PDF from the .tex file that's created by the `nanoc compile`. This command must be run from
 the root of the project.
 
 `upload_site_s3`
+
 This uploads the entire static site to Amazon S3.
 
 `create_book_page title="New Page" path="contents/foldername/filename"`
+
 This will create a new content file with the meta data (attributes) set and ready to go.
 
