@@ -173,7 +173,6 @@ task :create_book_page do
     title = ENV['title']
     full_path = 'content/' + ENV['path'] + '.md'
     path = full_path.gsub(/(.*\/).*?.md/,'\1')
-    levels = (ENV['path'].count '/') - 1
 
     if File.exists?(full_path)
       $stderr.puts "\t[error] Exists #{full_path}"
@@ -184,9 +183,8 @@ task :create_book_page do
 ---
 title: #{title}
 order: 10
-level: #{levels}
 type: article
-date: #{Time.now}
+date: #{Time.now.to_s(:db)} #{Time.now.formatted_offset}
 ---
 
 TODO: Add content to `#{full_path}`
