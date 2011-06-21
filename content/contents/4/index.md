@@ -1,7 +1,6 @@
 ---
 title: Other malleted instruments are hard to think of
 order: 40
-level: 1
 type: article
 date: 2011-06-07 12:40:00 +02:00
 ---

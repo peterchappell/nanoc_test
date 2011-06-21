@@ -1,7 +1,6 @@
 ---
 title: Xylophones are cool
 order: 10
-level: 1
 type: article
 date: 2011-06-09 12:40:00 +02:00
 ---

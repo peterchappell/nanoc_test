@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.5.25)  16 JUN 2011 22:34
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.5.25)  21 JUN 2011 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -538,7 +538,7 @@ m/lmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/lm/lmr17.pfb
 /texlive/2010/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/201
 0/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2010/texmf-dist
 /fonts/type1/public/lm/lmro10.pfb>
-Output written on output/pdf/7-million-pockets.pdf (16 pages, 684695 bytes).
+Output written on output/pdf/7-million-pockets.pdf (16 pages, 684044 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams

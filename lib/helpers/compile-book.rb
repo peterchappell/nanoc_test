@@ -1,5 +1,5 @@
 module CompileBookHelper
-  def compileBook (page, compiled_buffer='')
+  def compileBook (page, levelCount=0, compiled_buffer='')
 
     # Clear for start
     compiled_buffer << "\t"
@@ -8,7 +8,7 @@ module CompileBookHelper
     if page[:type] == 'article'
         compiled_buffer << '
 
-'+ '#'*page[:level] + page[:title] + '
+'+ '#'*levelCount + page[:title] + '
 
 '
         compiled_buffer << page.raw_content.gsub(/#[#].?/,'######')
@@ -20,7 +20,7 @@ module CompileBookHelper
 
       # Add children
       visible_children.each do |child|
-        compileBook(child, compiled_buffer)
+        compileBook(child, levelCount+1, compiled_buffer)
       end
 
       # Close list

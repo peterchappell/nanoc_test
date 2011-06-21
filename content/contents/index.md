@@ -1,6 +1,5 @@
 ---
 title: Table of Contents
-level: 0
 menuTitle: Contents
 contentContainerClass: singleColumn
 ---

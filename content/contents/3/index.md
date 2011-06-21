@@ -1,7 +1,6 @@
 ---
 title: Vibraphones are not phones
 order: 30
-level: 1
 type: article
 date: 2011-06-08 12:40:00 +02:00
 ---

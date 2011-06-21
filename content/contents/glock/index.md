@@ -1,7 +1,6 @@
 ---
 title: The glock rocks
 order: 20
-level: 1
 type: article
 date: 2011-06-03 12:40:00 +02:00
 ---
